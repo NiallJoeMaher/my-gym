@@ -1,0 +1,492 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<title>Cork Inner City Fitness Centre</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Gym, Fitness, Spa, Weights">
+	<meta name="description" content="Cork Inner City Fitness Centre strive to create a peaceful and relaxing environment in which its members can work out and realise and achieve their fitness and wellness goals">
+	<meta name="author" content="Carl Kellegher">
+	
+		<style>
+		
+				* 	{margin:0; padding:0; box-sizing:border-box;
+					}
+	
+				body{
+					background-color:black;
+					margin:5px;
+					}	
+			
+p, h3, table, button {
+					color:white;
+					font-family: "Lucida Console", "Courier New", monospace;
+					}
+		
+				a{
+					text-decoration:none;
+					color:white;
+					font-family: "Lucida Console", "Courier New", monospace;
+					text-align:center;
+					line-height:1.4;
+					}
+			
+			#grid-container {
+					display: grid;
+					grid-template-columns:repeat(6, 1fr);
+					grid-column-gap:5px;
+					grid-row-gap:5px;
+					}
+			
+			#nav {  grid-area: 1 / 1 / span 1 / span 6; 
+					text-align:center;
+					margin:auto;
+					width:25%;
+					font-size:1em;
+					padding-top:10px;
+					}
+			
+			#logo {grid-area: 2 / 1 / span 1 / span 6; 
+					font-family: "Lucida Console", "Courier New", monospace;
+					color:#ff0000;
+					text-align:center;
+					font-size:1.5em;
+					padding-bottom: 5px;
+					padding-top:30px;
+					
+					}
+			
+			
+			
+			#main { grid-area:3 / 1 / span 1 / span 6; 
+					border:2px solid #333300;
+					padding:5px;
+					border-radius:10px;
+					}
+					
+			#info { grid-area:4 / 1 / span 1 / span 6; 
+					font-size:.8em;
+					padding:20px 8px;
+					text-align:center;
+					text-justify:inter-word;
+					border:2px solid #333300;
+					border-radius:10px;
+					}
+			#classes { grid-area: 5 / 1 / span 1 / span 6;
+					font-size:1.5em;
+					text-align:center;
+					border:2px solid #333300;
+					padding:10px;
+					border-radius:10px;
+					}
+			#weights{ grid-area: 6 / 1 / span 1 / span 6 ; 
+					font-size:1.5em;
+					text-align:center;
+					border:2px solid #333300;
+					padding:10px;
+					border-radius:10px;
+					}
+			#coffee { grid-area: 7 / 1 / span 1 / span 6; 
+					font-size:1.5em;
+					text-align:center;
+					border:2px solid #333300;
+					border-radius:10px;
+					}
+			#pool{ grid-area: 8 / 1 / span 1 / span 6;
+					font-size:1.5em;
+					text-align:center;
+					border:2px solid #333300;
+					padding:10px;
+					border-radius:10px;
+					}
+			#pool2 { grid-area:9 / 1 / span 1 / span 6;
+					font-size:1.5em;
+					text-align:center;
+					border:2px solid #333300;
+					padding:10px;
+					border-radius:10px;
+					}
+			#pool3 { grid-area: 10 / 1 / span 1 / span 6; 
+					font-size:1.5em;
+					text-align:center;
+					border:2px solid #333300;
+					padding:10px;
+					border-radius:10px;
+					}
+			#membership {grid-area:11 / 1 / span 1 / span 6; 
+					text-align:center;
+					margin-top:50px;
+					}
+					
+			button	{background-color: #ff0000;
+					padding: 20px 20px;
+					
+					border:none;
+					border-radius:10px;
+					cursor: pointer;
+					width: 70%;
+					font-size:1.5em;
+					}
+			#footer { grid-area: 12 / 1 / span 1 / span 6; 
+					text-align:center;
+					padding:50px;
+					font-size:1em;
+					}
+			#footer2 { grid-area: 13 / 1 / span 1 / span 6; 
+					margin:auto;
+					padding-bottom:30px;
+			        font-size: 1em;
+					}
+						
+			
+		 @media screen and (min-width:600px) and (max-width:992px) {
+			 
+				body	{margin:10px;}
+			 
+			 	#grid-container {
+					display: grid;
+					grid-template-columns:repeat(6, 1fr);
+					grid-column-gap:10px;
+					grid-row-gap:10px;
+					}
+			
+			#nav {  grid-area: 1 / 1 / span 1 / span 6; 
+					text-align:center;
+					margin:auto;
+					width:25%;
+					line-height: 2 ;
+					}
+			
+			#logo {grid-area: 2 / 1 / span 1 / span 6; 
+					font-family: "Lucida Console", "Courier New", monospace;
+					color:#ff0000;
+					text-align:center;
+					font-size:2.5em;
+					padding-top: 40px;
+					padding-bottom:10px;
+					}
+			
+			
+			
+			#main { grid-area:3 / 1 / span 1 / span 6; 
+					border:3px solid #333300;
+					padding:5px;
+					border-radius:15px;
+					}
+					
+			#info { grid-area:4 / 1 / span 1 / span 6; 
+					font-size:1em;
+					padding:20px 20px;
+					text-align:center;
+					border:2px solid #333300;
+					border-radius:15px;
+					}
+			#classes { grid-area: 5 / 1 / span 1 / span 3;
+					font-size:2.5em;
+					text-align:center;
+					border:2px solid #333300;
+					padding:5px;
+					border-radius:15px;
+					}
+			#weights{ grid-area: 5 / 4 / span 1 / span 3; 
+					font-size:2.5em;
+					text-align:center;
+					border:2px solid #333300;
+					padding:5px;
+					border-radius:15px;
+					}
+			#coffee { grid-area: 6 / 1 / span 1 / span 6; 
+					font-size:2.5em;
+					text-align:center;
+					border:2px solid #333300;
+					border-radius:15px;
+					padding:5px;
+					}
+					
+			#pool{ grid-area: 7 / 1 / span 1 / span 2;
+					font-size:2em;
+					text-align:center;
+					border:2px solid #333300;
+					padding:5px;
+					border-radius:15px;
+					}
+			#pool2 { grid-area:7 / 3 / span 1 / span 2;
+					font-size:2em;
+					text-align:center;
+					border:2px solid #333300;
+					padding:5px;
+					border-radius:15px;
+					}
+			#pool3 { grid-area: 7 / 5 / span 1 / span 2; 
+					font-size:2em;
+					text-align:center;
+					border:2px solid #333300;
+					padding:5px;
+					border-radius:15px;
+					}
+			#membership {grid-area:8 / 1 / span 1 / span 6; 
+					text-align:center;
+					margin-top:50px;
+					}
+					
+			button	{background-color: #ff0000;
+					padding: 20px 20px;
+					border:none;
+					border-radius:15px;
+					cursor: pointer;
+					width: 70%;
+					font-size:2em;
+					}
+					
+			#footer { grid-area: 9 / 1 / span 1 / span 6; 
+					text-align:center;
+					}
+					
+			#footer2 { grid-area: 10 / 1 / span 1 / span 6; 
+					margin:auto;
+					font-size: 2em;
+					}
+					}
+		
+		
+@media screen and (min-width:993px) {
+	
+			body	{margin:20px;}
+			
+			#grid-container {
+					display: grid;
+					grid-template-columns:repeat(6, 1fr);
+					grid-column-gap:20px;
+					grid-row-gap:20px;
+					}
+			
+			#nav {  grid-area: 1 / 1 / span 1 / span 6; 
+					text-align:center;
+					margin:auto;
+					width:25%;
+					line-height: 2 ;
+					}
+			
+			#logo {grid-area: 2 / 1 / span 1 / span 6; 
+					font-family: "Lucida Console", "Courier New", monospace;
+					text-align:center;
+					font-size:3em;
+					padding: 30px;
+					color:#ff0000;
+					}
+			
+			
+			
+			#main { grid-area:3 / 1 / span 1 / span 6; 
+					border:2px solid #333300;
+					padding:30px;
+					border-radius:20px;
+					}
+					
+			#info { grid-area:4 / 1 / span 1 / span 6; 
+					font-size:2em;
+					padding:20px 20px;
+					text-align:center;
+					border:3px solid #333300;
+					border-radius:20px;
+					}
+			#classes { grid-area: 5 / 1 / span 1 / span 3;
+					font-size:3em;
+					text-align:center;
+					border:3px solid #333300;
+					padding:10px;
+					border-radius:20px;
+					}
+			#weights{ grid-area: 5 / 4 / span 1 / span 3; 
+					font-size:3em;
+					text-align:center;
+					border:3px solid #333300;
+					padding:10px;
+					border-radius:20px;
+					}
+			#coffee { grid-area: 6 / 1 / span 1 / span 6; 
+					font-size:3em;
+					text-align:center;
+					border:3px solid #333300;
+					border-radius:20px;
+					}
+			#pool{ grid-area: 7 / 1 / span 1 / span 2;
+					font-size:3em;
+					text-align:center;
+					border:3px solid #333300;
+					padding:10px;
+					border-radius:20px;
+					}
+			#pool2 { grid-area:7 / 3 / span 1 / span 2;
+					font-size:3em;
+					text-align:center;
+					border:3px solid #333300;
+					padding:10px;
+					border-radius:20px;
+					}
+			#pool3 { grid-area: 7 / 5 / span 1 / span 2; 
+					font-size:3em;
+					text-align:center;
+					border:3px solid #333300;
+					padding:10px;
+					border-radius:20px;
+					}
+			#membership {grid-area:8 / 1 / span 1 / span 6; 
+					text-align:center;
+					margin-top:50px;
+					}
+					
+			button	{background-color: #ff0000;
+					padding: 20px 20px;
+					
+					border:none;
+					border-radius:20px;
+					cursor: pointer;
+					width: 70%;
+					font-size:2em;
+					}
+			#footer { grid-area: 9 / 1 / span 1 / span 6; 
+					text-align:center;
+					padding:100px;
+					font-size:3em;
+					}
+			#footer2 { grid-area: 10 / 1 / span 1 / span 6; 
+					margin:auto;
+					padding-bottom:100px;
+			        font-size: 3em;
+					}
+					}	
+			
+					
+			
+		
+		</style>
+		
+	</head>
+	
+	<body id="grid-container">
+		
+			
+		
+				
+					<div id="nav">
+						<a href="index.html">HOME</a> <hr>
+						<a href="EQUIPMENT.html">TECHNOgym&reg;</a> <hr>
+						<a href="classes.html">CLASSES</a> <hr>
+						<a href="pool.html">POOL</a> <hr>
+						<a href="membrship.html">MEMBERSHIP</a> <hr>
+					</div>
+					
+					<div id="logo">
+						<h1>Techno&reg; <br> GYM</h1>
+					</div>	
+			
+	
+			<div id="main">
+				<a href="weights.html">
+					<img src="images/main1.jpg"   style="width:100%; height:auto" alt="picture of gym">
+				</a>
+				</div>
+					
+					<div id="info">
+						<h3>Welcome to <span style="color:#ff0000; font-size:2em;" >TechnoGym&reg; </span></h3><br>
+						<p>
+							If you are looking for a new, vibrant place to either work out or unwind, then Technogym has you covered. With a wide range of classes
+							With classes to suit all abilities and a state-of-the art weights section, we will have you feeling and looking your best in no time.
+							For our members, we also have a brand new Spa area. Take a dip in the hydrotherapy pool or relax and unwind in our sauna and jacuzzi after one of
+							your tailor-made workouts.
+							We offer different membership plans to work with whatever schedule suits you. Feel free to get in touch with our friendly staff to book an introductory appointment.
+						</p>
+					</div>
+					
+					<div id="classes">					
+						<a href="classes.html">
+							<p>CLASSES</p>
+							<img src="images/classes2.jpg"   style="width:100%; height:auto" alt="picture of classes">
+						</a>
+					</div>
+						
+						
+					<div id="weights">
+						<a href="weights.html">
+							<p>WEIGHTS</p>
+							<img src="images/weights.jpg"   style="width:100%; height:auto" alt="picture of weights"> 
+						</a>
+					</div>
+					
+				
+					<div id="coffee">
+						<a href="coffee.html">
+							<P>COFFEE SHOP</P>
+							<img src="images/coffee.jpg"    style="width:100%; height:auto" alt="coffee shop">
+						</a>
+					</div>
+					
+					<div id="pool">
+						<a href="pool.html">
+							<P>POOL</P>
+							<img src="images/pool.jpg"   style="width:100%; height:auto" alt="link to pool">
+						</a>
+					</div>
+					
+					<div id="pool2">
+						<a href="pool.html">
+							<P>SAUNA</P>
+							<img src="images/sauna.jpg"   style="width:100%; height:auto; " alt="link to pool">
+						</a>
+					</div>
+					
+					<div id="pool3">
+						<a href="pool.html">
+							<P>JACUZZI</P>
+							<img src="images/jacuzzi.jpg"  style="width:100%; height:auto" alt="picture of pool">
+						</a>	
+					</div>
+					
+					
+					<div id="membership">
+					
+						<button  type="submit">MEMBERSHIP</button>	
+					
+					</div>
+		
+					<div id="footer">	
+		
+						<p>
+							Location:
+							<br>
+							<br>
+							44 Lee River View Road.
+							<br>
+							Co.Cork
+						<p>
+			
+					</div>
+				
+					<div id="footer2">
+						<table >
+							<tr>
+								<th colspan="2">opening hours:</th>
+							</tr>
+				
+							<tr>
+								<td>Mon-Fri</td>
+								<td>06:00-22:00</td>
+							</tr>
+							<tr>				
+								<td>Sat</td>
+								<td>08:00-19:00</td>
+							</tr>
+							<tr>
+								<td>Sun</td>
+								<td>09:00-18:00</td>
+							</tr>
+						</table>		
+					</div>
+				
+		</body>
+
+</html>
