@@ -39,7 +39,6 @@
 
 	
 	#membership {
-	  text-align:justify;
 	  padding:30px;
 	  background-color:rgb(22, 20, 20);
 	  margin-left:5px;
@@ -49,28 +48,30 @@
 	
 	div.membership {
 		border:3px solid #343434;
-		text-align:center;	
 		color:rgb(210, 210, 210);
 		padding:5px;
 		line-height:170%;
 	}
 	
 	td.membership {
-		text-align:center;	
 		color:rgb(245, 234, 234);
-		border: 3px solid #343434;
+		border: 2px solid #343434;
+		padding:5px;;
+		background-color:#504e4e ;
+
 	}
 	
 	p.membership {
-		text-align:center;	
-		color:rgb(251, 226, 226);
+		color:rgb(222, 216, 216);
 		font-size:1em;
+		margin-left: 4%;
 	}
 	
 	.membershipinc {
-		text-align:center;	
-		color:rgb(170, 13, 13);
+		text-align:center;
+		color:rgb(222, 216, 216);
 		font-size:1em;
+		background-color: #7e2020;
 	}
 	
 	table {
@@ -241,6 +242,10 @@
 	aside { 
 	  grid-column: span 4;
 	}
+
+	p {
+		font-size:1em;
+	}
 	 
 	nav {
 	   display: flex;
@@ -316,6 +321,4 @@
 	  margin:10px; 
 	  font-size:1.2em;
 	  color:white;
-	}
-	
 	}
