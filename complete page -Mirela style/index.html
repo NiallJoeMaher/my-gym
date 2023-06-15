@@ -1,0 +1,432 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<title>TechnoGym index page</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Gym, Fitness, Spa, Weights">
+	<meta name="description" content="Cork Inner City Fitness Centre strive to create a peaceful and relaxing environment in which its members can work out and realise and achieve their fitness and wellness goals">
+	<meta name="author" content="Carl Kellegher">
+	<link rel="stylesheet" href="external.css">
+	
+		<style>
+		
+				* 	{margin:0; padding:0; box-sizing:border-box;
+					}
+	
+				body{
+					background-color:black;
+					margin:5px;
+					}	
+			
+				
+			
+			#grid-container {
+					display: grid;
+					grid-template-columns:repeat(6, 1fr);
+					grid-column-gap:5px;
+					grid-row-gap:5px;
+					}
+			
+			#nav {  grid-area: 1 / 1 / span 1 / span 6; 
+					text-align:center;
+					margin:auto;
+					width:25%;
+					font-size:1.4em;
+					padding-top:10px;
+					}
+			
+			a {
+				color:rgb(225, 225, 225);
+			}		
+ 		
+
+			 hr {
+				margin-bottom:20px;
+			 }
+			
+			#logo {grid-area: 2 / 1 / span 1 / span 6; 
+					color:rgb(184, 9, 9);
+					text-align:center;
+					font-size:1.5em;
+					padding-bottom: 5px;
+					padding-top:30px;
+					text-shadow:2px 2px 1px rgb(0, 0, 0);
+					}
+			
+			
+			
+			#main { grid-area:3 / 1 / span 1 / span 6; 
+					border:2px solid #3c3c3c;
+					padding:5px;
+					background-color: #1e1e1e;
+					width: 99%;
+					}
+					
+			#info { grid-area:4 / 1 / span 1 / span 6; 
+					padding:20px 8px;
+					text-align:center;
+					text-justify:inter-word;
+					border:2px solid #3e3e3e;
+					background-color: #242323;
+					width: 99%;
+					}
+			#classes { grid-area: 5 / 1 / span 1 / span 6;
+					font-size:1.5em;
+					text-align:center;
+					border:2px solid #3e3e3e;
+					background-color: #1e1e1e;
+					padding:10px;
+					width: 99%;
+					text-shadow:1px 1px 1px rgb(0, 0, 0);
+					}
+			#weights{ grid-area: 6 / 1 / span 1 / span 6 ; 
+					font-size:1.5em;
+					text-align:center;
+					border:2px solid #3e3e3e;
+					background-color: #1e1e1e;
+					padding:10px;
+					width: 99%;
+					text-shadow:1px 1px 1px rgb(0, 0, 0);
+					}
+			#coffee { grid-area: 7 / 1 / span 1 / span 6; 
+					font-size:1.5em;
+					text-align:center;
+					border:2px solid #3e3e3e;
+					background-color: #1e1e1e;
+					width: 99%;
+					text-shadow:1px 1px 1px rgb(0, 0, 0);
+					}
+			#pool{ grid-area: 8 / 1 / span 1 / span 6;
+					font-size:1.5em;
+					text-align:center;
+					border:2px solid #3e3e3e;
+					background-color: #1e1e1e;
+					padding:10px;
+					width: 99%;
+					text-shadow:1px 1px 1px rgb(0, 0, 0);
+					}
+			#pool2 { grid-area:9 / 1 / span 1 / span 6;
+					font-size:1.5em;
+					text-align:center;
+					border:2px solid #3e3e3e;
+					background-color: #1e1e1e;
+					padding:10px;
+					width: 99%;
+					text-shadow:1px 1px 1px rgb(0, 0, 0);
+					}
+			#pool3 { grid-area: 10 / 1 / span 1 / span 6; 
+					font-size:1.5em;
+					text-align:center;
+					border:2px solid #3e3e3e;
+					background-color: #1e1e1e;
+					padding:10px;
+					width: 99%;
+					text-shadow:1px 1px 1px rgb(0, 0, 0);
+					}
+			#membership {grid-area:11 / 1 / span 1 / span 6; 
+					text-align:center;
+					margin-top:50px;
+					}
+					
+			.button	{
+				   background-color: #ff0000;
+					padding: 20px 20px;
+					color:rgb(255, 250, 250);
+					border:none;
+					border-radius:30px;
+					cursor: pointer;
+					font-size:1.5em;
+					}
+
+			.button:hover {
+				 background-color: #8e1212;
+				 color:rgb(237, 237, 237)
+			}	
+
+			#footer { grid-area: 12 / 1 / span 1 / span 6; 
+				    margin: o auto;
+					text-align:center;
+					padding:40px;
+					font-size:1em;
+					}
+
+			footer > a{
+				color:rgb(122, 117, 117);
+			}	
+		
+			
+						
+			
+		 @media screen and (min-width:600px) and (max-width:992px) {
+			 
+				body	{margin:10px;}
+			 
+			 	#grid-container {
+					display: grid;
+					grid-template-columns:repeat(6, 1fr);
+					grid-column-gap:10px;
+					grid-row-gap:10px;
+					}
+			
+			#nav {  grid-area: 1 / 1 / span 1 / span 6; 
+					text-align:center;
+					margin:auto;
+					width:25%;
+					line-height: 2 ;
+					}
+			
+			#logo {grid-area: 2 / 1 / span 1 / span 6; 
+		            text-align:center;
+					font-size:2.5em;
+					padding-top: 40px;
+					padding-bottom:10px;
+					}
+			
+			
+			
+			#main { grid-area:3 / 1 / span 1 / span 6; 
+					padding:5px
+					}
+					
+			#info { grid-area:4 / 1 / span 1 / span 6; 
+					font-size:1em;
+					padding:20px 20px;
+					text-align:center;
+					}
+			#classes { grid-area: 5 / 1 / span 1 / span 3;
+					font-size:2.5em;
+					text-align:center;
+					padding:5px;
+					}
+			#weights{ grid-area: 5 / 4 / span 1 / span 3; 
+					font-size:2.5em;
+					text-align:center;
+					padding:5px;
+					}
+			#coffee { grid-area: 6 / 1 / span 1 / span 6; 
+					font-size:2.5em;
+					text-align:center;
+					padding:5px;
+					}
+					
+			#pool{ grid-area: 7 / 1 / span 1 / span 2;
+					font-size:2em;
+					text-align:center;
+					padding:5px;
+					}
+			#pool2 { grid-area:7 / 3 / span 1 / span 2;
+					font-size:2em;
+					text-align:center;
+					padding:5px;
+					}
+			#pool3 { grid-area: 7 / 5 / span 1 / span 2; 
+					font-size:2em;
+					text-align:center;
+					padding:5px;
+					}
+			#membership {grid-area:8 / 1 / span 1 / span 6; 
+					text-align:center;
+					margin-top:50px;
+					}
+				
+		
+					}
+		
+		
+@media screen and (min-width:993px) {
+	
+			body	{margin:20px;}
+			
+			#grid-container {
+					display: grid;
+					grid-template-columns:repeat(6, 1fr);
+					grid-column-gap:20px;
+					grid-row-gap:20px;
+					}
+			
+			#nav {  grid-area: 1 / 1 / span 1 / span 6; 
+					text-align:center;
+					margin:auto;
+					width:25%;
+					line-height: 2 ;
+					}
+			
+			#logo {grid-area: 2 / 1 / span 1 / span 6; 
+					text-align:center;
+					font-size:3em;
+					padding: 30px;
+					}
+			
+			
+			
+			#main { grid-area:3 / 1 / span 1 / span 6; 
+					padding:30px;
+					}
+					
+			#info { grid-area:4 / 1 / span 1 / span 6; 
+					font-size:1.2em;
+					padding:20px 20px;
+					text-align:center;
+					}
+			#classes { grid-area: 5 / 1 / span 1 / span 3;
+					font-size:2em;
+					text-align:center;
+					padding:10px;
+
+					}
+			#weights{ grid-area: 5 / 4 / span 1 / span 3; 
+					font-size:2em;
+					text-align:center;
+					padding:10px;
+					}
+			#coffee { grid-area: 6 / 1 / span 1 / span 6; 
+					font-size:2em;
+					text-align:center;
+					}
+			#pool{ grid-area: 7 / 1 / span 1 / span 2;
+					font-size:2em;
+					text-align:center;
+					padding:10px;
+					}
+			#pool2 { grid-area:7 / 3 / span 1 / span 2;
+					font-size:2em;
+					text-align:center;
+					padding:10px;
+					}
+			#pool3 { grid-area: 7 / 5 / span 1 / span 2; 
+					font-size:2em;
+					text-align:center;
+					padding:10px;
+					}
+			#membership {grid-area:8 / 1 / span 1 / span 6; 
+					text-align:center;
+					margin-top:50px;
+					}
+		
+					
+					}
+				
+			
+					
+			
+		
+		</style>
+		
+	</head>
+	
+	<body id="grid-container">
+		
+			
+		
+				
+					<div id="nav">
+						<a href="index.html" target="_blank">HOME</a> <hr>
+						<a href="weights.html" target="_blank">TECHNOgym&reg;</a> <hr>
+						<a href="classes.html" target="_blank">CLASSES</a> <hr>
+						<a href="pool.html" target="_blank">POOL</a> <hr>
+						<a href="membership.html" target="_blank">MEMBERSHIP</a> <hr>
+					</div>
+					
+					<div id="logo">
+						<h1>Techno&reg; <br> GYM</h1>
+					</div>	
+			
+	
+			<div id="main">
+				<a href="weights.html" target="_blank" >
+					<img src="images/main1.jpg"   style="width:100%; height:auto" alt="picture of gym">
+				</a>
+				</div>
+					
+					<div id="info">
+						<h3>Welcome to <span style="color:#ff0000; font-size:2em;" >TechnoGym&reg; </span></h3><br>
+						<hr>
+						<p>
+							If you are looking for a new, vibrant place to either work out or unwind, then Technogym has you covered. With a wide range of classes
+							With classes to suit all abilities and a state-of-the art weights section, we will have you feeling and looking your best in no time.
+							For our members, we also have a brand new Spa area. Take a dip in the hydrotherapy pool or relax and unwind in our sauna and jacuzzi after one of
+							your tailor-made workouts.
+							We offer different membership plans to work with whatever schedule suits you. Feel free to get in touch with our friendly staff to book an introductory appointment.
+						</p>
+					</div>
+					
+					<div id="classes">					
+						<a href="classes.html" target="_blank">
+							<p>CLASSES</p>
+							<img src="images/classes2.jpg"   style="width:100%; height:auto" alt="picture of classes">
+						</a>
+					</div>
+						
+						
+					<div id="weights">
+						<a href="weights.html" target="_blank">
+							<p>WEIGHTS</p>
+							<img src="images/weights.jpg"   style="width:100%; height:auto" alt="picture of weights"> 
+						</a>
+					</div>
+					
+				
+					<div id="coffee">
+						<a href="membership.html" target="_blank">
+							<P>COFFEE SHOP</P>
+							<img src="images/coffee.jpg"    style="width:100%; height:auto" alt="coffee shop">
+						</a>
+					</div>
+					
+					<div id="pool">
+						<a href="pool.html" target="_blank" >
+							<P>POOL</P>
+							<img src="images/pool.jpg"   style="width:100%; height:auto" alt="link to pool">
+						</a>
+					</div>
+					
+					<div id="pool2">
+						<a href="pool.html">
+							<P>SAUNA</P>
+							<img src="images/sauna.jpg"   style="width:100%; height:auto; " alt="link to pool">
+						</a>
+					</div>
+					
+					<div id="pool3">
+						<a href="pool.html" target="_blank">
+							<P>JACUZZI</P>
+							<img src="images/jacuzzi.jpg"  style="width:100%; height:auto" alt="picture of pool">
+						</a>	
+					</div>
+					
+					
+					<div id="membership">
+					
+						<a class="button" href="membership.html" target="_blank">MEMBERSHIP</a>	
+					
+					</div>
+		
+					<div id="footer">	
+		
+						<footer>
+							<section>
+								<a target="_blank" href="#"><img src="images/IngramIcon.png" alt="Instagram Logo" width="30"></a>
+								<a target="_blank" href="#"><img src="images/FaceIcon.png" alt="Facebook Logo" width="30"></a>
+								<a target="_blank" href="#"><img src="images/youtube.png" alt="youtube Logo" width="30"></a></p>
+							</section>
+							<br>
+							<a href="index.html" target="_blank"> HOME </a> |
+							<a href="weights.html" target="_blank"> TECHNOgym&reg; </a> |
+							<a href="classes.html" target="_blank"> CLASESS </a> |
+							<a href="pool.html"  target="_blank"> POOL AND SPA </a> | 
+							<a href="membership.html" target="_blank"> MEMBERSHIP </a> 
+						  <p class="year">&copy;2023</p>
+						</footer>
+					</div>
+				
+					
+			
+					
+				
+		</body>
+
+</html>
