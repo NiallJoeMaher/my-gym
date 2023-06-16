@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cork Inner City Fitness</title>
+<style>
+  table, th, td {
+    border: 1px solid red;
+  }
+  th, td {
+    padding: 15px;
+  }
+</style>
+
+<body>
+<section>
+<div>
+<img src="pool" alt="pool2">
+</div>
+<div>
+<h2>Swimming Pool & Spa</h2>
+</div>
+<br>
+<p> Our 18 metre swimming pool is kept at a constant, comfortable temperature and features dedicated swim 
+lanes for your convenience. Whether you're swimming to stay in shape or training for your next competition,
+our pool is the perfect place to get your laps in.</p>
+<br>
+<p> After your swim, why not indulge in our other facilities? Relax and rejuvenate in our 
+jacuzzi, sauna, steam room or spa pool.</p>
+<br>
+<p><strong>Please Note:</strong>Lane swimming must be pre-booked at all times. Guests must wear a swimmimg hat when using 
+the pool facilities. All guests using the sauna, steam room or jacuzzi must be over 16 years.</p>
+<div style="border:2px solid black; padding:10px;">
+</div>
+ <p style="text-decoration:underline;">Swimming Pool opening hours</p>
+<table>
+<tr>
+<th>Monday to Friday></th>
+<th>Weekends & Bank Holidays</th>
+</tr>
+<tr>
+<td>10am to 12pm & 2pm to 6pm</td> 
+<td>10am to 4pm</td>
+</tr>
+</table>
+</section>
+</body>
+</html>
