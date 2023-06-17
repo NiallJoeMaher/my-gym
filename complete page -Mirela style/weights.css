@@ -274,6 +274,10 @@ article{
     width: 80px;
     height: auto;
 }
+
+.icon {
+  width: 30px !important;
+}
  
 
 footer{
