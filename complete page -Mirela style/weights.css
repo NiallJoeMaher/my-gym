@@ -374,3 +374,25 @@ article{
     grid-row: 8/9;
  }
 }
+@media screen and (min-width:1200 px){
+     .Gym{
+    display: grid;
+    grid-column: 1/13;
+    grid-row: 3/4;
+    grid-auto-rows: minmax (30 wv, 160 px);
+    grid-template-columns: repeat (4, 1 fr);
+    grid-gap: 2 em;
+    grid-row:3/4;
+    display: inline;
+    justify-content: space-around;
+    object-fit: cover;
+    margin: 30 px;
+    border-width: 2 px;
+    border-style: solid;
+    border-color: #535353;
+    border-radius:50 %;
+    width: 330 px;
+    height: 330 px;
+     }
+}
+    
